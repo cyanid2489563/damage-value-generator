@@ -194,13 +194,13 @@ var items = {
 	clock: {
 		durability: 64,
 		parent: parents.generated,
-		durabilityMsg: 'How many clock models do you want to have?',
+		durabilityMsg: '您想要多少個時鐘模型檔?',
 		predicate: '"time": '
 	},
 	compass: {
 		durability: 32,
 		parent: parents.generated,
-		durabilityMsg: 'How many compass models do you want to have?',
+		durabilityMsg: '您想要多少個羅盤模型檔?',
 		predicate: '"angle": '
 	},
 	other: {
@@ -208,7 +208,7 @@ var items = {
 		parent: parents.generated,
 		show: ["unbreakableHide"],
 		check: ["unbreakable"],
-		durabilityMsg: 'How much maximum durability does your tool have?'
+		durabilityMsg: '您想要的最大耐久度?'
 	}
 };
 
@@ -264,7 +264,7 @@ function durabilityInfo() {
 	if (toolObj.durabilityMsg) { // custom durability.
 		document.getElementById("durabilityInfo").innerHTML = toolObj.durabilityMsg + '<br><input type = "text" value = "' + durability + '" class = "textLine" id = "customDur"/>';
 	} else { //existing tool
-		document.getElementById("durabilityInfo").innerHTML = 'Your selected tool has a durability of ' + durability + '.';
+		document.getElementById("durabilityInfo").innerHTML = '您選擇的工具耐久度為 ' + durability + '.';
 	}
 
 	document.getElementById("modelLimit").value = durability - 1;
