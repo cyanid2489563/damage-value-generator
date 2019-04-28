@@ -13,21 +13,21 @@ layout: default
         <p><a href="https://github.com/geenium/damage-value-generator/blob/master/changes_list.txt" target="_blank">List of changes made</a></p>
         <p>Tool: <select id="tool" onchange="toolInfo()">
             <option value="bow">弓</option>
-            <option value="carrot_on_a_stick">Carrot on a Stick</option>
+            <option value="carrot_on_a_stick">胡蘿蔔釣竿</option>
             <option value="diamond_hoe">鑽石工具</option>
             <option value="elytra">鞘翅</option>
-            <option value="fishing_rod">Fishing Rod</option>
-            <option value="flint_and_steel">Flint &amp; Steel</option>
-            <option value="golden_hoe">Golden Tool</option>
-            <option value="iron_hoe">Iron Tool</option>
-            <option value="trident_in_hand">Trident</option>
-            <option value="shears">Shears</option>
-            <option value="shield">Shield</option>
-            <option value="stone_hoe">Stone Tool</option>
-            <option value="wooden_hoe">Wooden Tool</option>
-            <option value="clock">Clock</option>
-            <option value="compass">Compass</option>
-            <option value="other">Other</option>
+            <option value="fishing_rod">釣竿</option>
+            <option value="flint_and_steel">打火石; Steel</option>
+            <option value="golden_hoe">黃金工具</option>
+            <option value="iron_hoe">鐵製工具</option>
+            <option value="trident_in_hand">三叉戟</option>
+            <option value="shears">剪刀</option>
+            <option value="shield">盾牌</option>
+            <option value="stone_hoe">石製工具</option>
+            <option value="wooden_hoe">木頭工具</option>
+            <option value="clock">時鐘</option>
+            <option value="compass">羅盤</option>
+            <option value="other">其他</option>
         </select>
         <span class ="info">Choose "other" for custom durability</span></p>
         <div id="durabilityInfo">Your selected tool has a durability of 385.</div>
@@ -45,7 +45,7 @@ layout: default
         <p id="ver13"><input type ="checkbox" id="ver13Check" checked="checked" onchange="durabilityInfo()"/> Use 1.13 values, ie durability, texture/folder names by default.</p>
         <p>Max no. of models to produce (excludes 0 damage):<br>
         <input type="text" id="modelLimit" value="384"/></p>
-        <p><input type="button" value="Generate Code" id="generate" onclick="generate()"/> <input type="button" value="Download JSON" id="download" disabled onclick="downloadJson()"/></p>
+        <p><input type="button" value="生成代碼" id="generate" onclick="generate()"/> <input type="button" value="下載 JSON" id="download" disabled onclick="downloadJson()"/></p>
         <textarea readonly id="result" class="hidden"></textarea>
     </body>
 </html>
