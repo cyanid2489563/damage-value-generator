@@ -401,7 +401,7 @@ function generate() { //calculate all percentages
 	}
 
 	document.getElementById("result").innerHTML = resultant;
-	document.getElementById("generate").value = "Generate Code"
+	document.getElementById("generate").value = "生成代碼"
 
 	document.getElementById("download").disabled = false;
 }
